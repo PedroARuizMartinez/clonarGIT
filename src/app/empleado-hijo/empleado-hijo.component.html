@@ -3,5 +3,12 @@
     <div class="col">
       {{indice+1}}:  {{ empleado.nombre }} {{ empleado.apellido }} {{ empleado.cargo }} {{ empleado.salario }}
     </div>
+    <ul>
+      <li *ngFor="let caracteristica of arrayCaracteristica">
+        {{ caracteristica }}
+      </li>
+    </ul>
+    <app-empleado-caracteristicas (caracteristicas)="addCaracteristica($event)" ></app-empleado-caracteristicas>
   </div>
 </div>
+

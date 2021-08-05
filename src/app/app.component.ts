@@ -15,6 +15,8 @@ export class AppComponent {
   cCargo:string = "";
   cSalario:number = 0;
 
+  
+
 
   empleados:Empleado[] = [
     new Empleado("Juan", "Díaz", "Presidente", 7500),
@@ -28,5 +30,8 @@ export class AppComponent {
     this.empleados.push(e);
   }
 
+  constructor() {
+    
+  }
 
 }
