@@ -1,18 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <!--<div *ngFor="let empleado of empleados; let i=index">-->
-        {{indice+1}}:  {{ empleado.nombre }} {{ empleado.apellido }} {{ empleado.cargo }} {{ empleado.salario }}
-      <!--</div>-->
+      {{indice+1}}:  {{ empleado.nombre }} {{ empleado.apellido }} {{ empleado.cargo }} {{ empleado.salario }}
     </div>
-    <!-- Recorremos el array de características y lo mostramos interpolandolo -->
-    <ul>
-      <li *ngFor="let caracteristica of arrayCaracteristicas">
-        {{ caracteristica }}
-      </li>
-    </ul>
-    <!-- Añadimos el componente '<app-empleado-caracteristicas>' a la plantilla y vinculamos el '@Output' mediante '(caracteristicasEmpleados)="addCaracteristicaEmpleado($event)'  -->
-    <app-empleado-caracteristicas (caracteristicasEmpleados)="addCaracteristicaEmpleado($event)"></app-empleado-caracteristicas>
-
   </div>
 </div>
